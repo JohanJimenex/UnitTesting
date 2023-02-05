@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MedicosComponent } from './pruebas intermedias/Espia Servicio/medicos/medicos.component';
+import { HttpClientModule } from "@angular/common/http";
+import { MiComponenteComponent } from './Pruebas Intermedias2/mi-componente/mi-componente.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MedicosComponent,
+    MiComponenteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
